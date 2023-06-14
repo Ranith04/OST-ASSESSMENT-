@@ -1,43 +1,49 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-  <title>My Blog Website</title>
+  <title>Blog Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
-    
+
     header {
       background-color: #333;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
-    
+
     h1 {
       margin: 0;
     }
-    
-    section {
+
+    main {
       margin: 20px;
     }
-    
+
     h2 {
       font-size: 24px;
       margin-bottom: 10px;
     }
-    
-    ul {
-      list-style-type: none;
-      padding: 0;
+
+    .blog-segments {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
     }
-    
-    li {
-      margin-bottom: 5px;
+
+    .blog-segment {
+      flex-basis: 30%;
     }
-    
+
+    .sub-segments {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
     footer {
       background-color: #333;
       color: #fff;
@@ -48,71 +54,66 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to My Blog Website</h1>
+    <h1>Welcome to our Blog Website</h1>
   </header>
-  
-  <section>
-    <h2>Blogs</h2>
-    <ul>
-      <li>
-        <h3>Segment 1</h3>
-        <ul>
-          <li>Subsegment 1</li>
-          <li>Subsegment 2</li>
-          <li>Subsegment 3</li>
-          <li>Subsegment 4</li>
-          <li>Subsegment 5</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Segment 2</h3>
-        <ul>
-          <li>Subsegment 1</li>
-          <li>Subsegment 2</li>
-          <li>Subsegment 3</li>
-          <li>Subsegment 4</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Segment 3</h3>
-        <ul>
-          <li>Subsegment 1</li>
-          <li>Subsegment 2</li>
-          <li>Subsegment 3</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>News Feeds</h2>
-    <ul>
-      <li>[News feed item 1]</li>
-      <li>[News feed item 2]</li>
-      <li>[News feed item 3]</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li>[Event 1]</li>
-      <li>[Event 2]</li>
-      <li>[Event 3]</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Jobs</h2>
-    <ul>
-      <li>[Job 1]</li>
-      <li>[Job 2]</li>
-      <li>[Job 3]</li>
-    </ul>
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 My Blog Website. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+
+  <main>
+    <section>
+      <h2>Blogs</h2>
+      <div class="blog-segments">
+        <div class="blog-segment">
+          <h3>Segment 1</h3>
+          <ul class="sub-segments">
+            <li>Subsegment 1</li>
+            <li>Subsegment 2</li>
+            <li>Subsegment 3</li>
+            <li>Subsegment 4</li>
+            <li>Subsegment 5</li>
+          </ul>
+        </div>
+        <div class="blog-segment">
+          <h3>Segment 2</h3>
+          <ul class="sub-segments">
+            <li>Subsegment 1</li>
+            <li>Subsegment 2</li>
+            <li>Subsegment 3</li>
+            <li>Subsegment 4</li>
+            <li>Subsegment 5</li>
+            <li>Subsegment 6</li>
+            <li>Subsegment 7</li>
+          </ul>
+        </div>
+        <div class="blog-segment">
+          <h3>Segment 3</h3>
+          <ul class="sub-segments">
+            <li>Subsegment 1</li>
+            <li>Subsegment 2</li>
+            <li>Subsegment 3</li>
+            <li>Subsegment 4</li>
+            <li>Subsegment 5</li>
+            <li>Subsegment 6</li>
+            <li>Subsegment 7</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>News Feeds</h2>
+      <ul>
+        <li>News Feed Item 1</li>
+        <li>News Feed Item 2</li>
+        <li>News Feed Item 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Update on Upcoming Events</h2>
+      <p>No upcoming events at the moment.</p>
+    </section>
+
+    <section>
+      <h2>Jobs</h2>
+      <ul>
+        <li>Job Listing 1</li>
+        <li>Job Listing 
